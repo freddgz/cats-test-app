@@ -1,3 +1,4 @@
+import 'package:animals_app/presentation/home/theme.dart';
 import 'package:flutter/material.dart';
 
 class LabelCard extends StatelessWidget {
@@ -13,7 +14,7 @@ class LabelCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 5),
       decoration: BoxDecoration(
-        color: Colors.black26,
+        color: AppColor.primary.withOpacity(0.7),
         borderRadius: BorderRadius.circular(5),
       ),
       child: Row(

@@ -33,15 +33,11 @@ dependencies:
 
 
   provider: ^6.1.2
-  flutter_downloader: ^1.10.5
-  sqflite: ^2.0.3+1
-  shared_preferences: ^2.1.1
-  flutter_swiper_null_safety: ^1.0.2
-  audioplayers: ^3.0.1
   cached_network_image: ^3.2.1
   http: ^0.13.5
   cupertino_icons: ^1.0.6
   carousel_slider: ^5.0.0
+  flutter_svg: ^2.0.9
 
 dev_dependencies:
   flutter_test:
