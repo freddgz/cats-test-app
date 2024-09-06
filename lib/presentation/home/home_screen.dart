@@ -32,6 +32,7 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Column(
           children: [
+            const SizedBox(height: 5),
             TextField(
               controller: bloc.textController,
               textInputAction: TextInputAction.search,

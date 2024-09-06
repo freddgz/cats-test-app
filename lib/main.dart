@@ -1,6 +1,7 @@
 import 'package:animals_app/data/datasource/api_repository_impl.dart';
 import 'package:animals_app/domain/repository/api_repository.dart';
 import 'package:animals_app/presentation/home/splash/splash_screen.dart';
+import 'package:animals_app/presentation/home/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -26,7 +27,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        scaffoldBackgroundColor: AppColor.background,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: AppColor.primary,
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.white,
+          surfaceTintColor: Colors.white,
+        ),
         useMaterial3: true,
       ),
       home: const SplashScreen(),

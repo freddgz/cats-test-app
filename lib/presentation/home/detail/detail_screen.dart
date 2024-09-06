@@ -3,6 +3,7 @@ import 'package:animals_app/domain/response/breed_response.dart';
 import 'package:animals_app/presentation/home/detail/carousel_indicators.dart';
 import 'package:animals_app/presentation/home/detail/carousel_item.dart';
 import 'package:animals_app/presentation/home/detail/detail_bloc.dart';
+import 'package:animals_app/presentation/home/theme.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +28,13 @@ class DetailScreen extends StatelessWidget {
     final bloc = Provider.of<DetailBloc>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text(item.name),
+        title: Text(
+          item.name,
+          style: TextStyle(
+            color: AppColor.primary,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       body: Column(
         children: [
@@ -67,7 +74,7 @@ class DetailScreen extends StatelessWidget {
                                   padding: const EdgeInsets.symmetric(
                                       vertical: 3, horizontal: 5),
                                   decoration: BoxDecoration(
-                                      color: Colors.grey,
+                                      color: AppColor.primary,
                                       borderRadius: BorderRadius.circular(10)),
                                   child: Text(
                                     e,

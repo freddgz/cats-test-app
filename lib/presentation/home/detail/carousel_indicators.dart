@@ -1,4 +1,5 @@
 import 'package:animals_app/domain/response/image_response.dart';
+import 'package:animals_app/presentation/home/theme.dart';
 import 'package:carousel_slider/carousel_controller.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +29,7 @@ class CarouselIndicators extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: (Theme.of(context).brightness == Brightness.dark
                         ? Colors.white
-                        : Colors.black)
+                        : AppColor.primary)
                     .withOpacity(index == entry.key ? 0.9 : 0.4)),
           ),
         );
