@@ -1,0 +1,3 @@
+class RequestException implements Exception{
+
+}
